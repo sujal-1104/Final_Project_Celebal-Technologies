@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0f1115;
+  color: #e5e5e5;
+  line-height: 1.6;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+.chat-container {
+  padding: 24px;
+  max-width: 900px;
+  margin: auto;
+  background-color: #1a1c22;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+}
+
+.chat-container h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #4fc3f7;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+input[type="text"],
+input[type="file"] {
+  width: 100%;
+  padding: 10px 14px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2a2c34;
+  color: #e5e5e5;
+  outline: none;
+}
+
+input::placeholder {
+  color: #888;
+}
+
+button {
+  padding: 8px 14px;
+  margin: 6px 4px 0 0;
+  border: none;
+  border-radius: 8px;
+  background-color: #4fc3f7;
+  color: #0f1115;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00bfa5;
+}
+
+.chat-messages {
+  height: 320px;
+  overflow-y: auto;
+  background-color: #21232b;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.chat-messages ul {
+  list-style: none;
+}
+
+.chat-messages li {
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background-color: #2e313d;
+  color: #e5e5e5;
+  position: relative;
+}
+
+.chat-messages li strong {
+  color: #4fc3f7;
+}
+
+.chat-controls {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.chat-video-section {
+  display: flex;
+  gap: 50px;
+  margin-top: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.chat-video-section p {
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #90caf9;
+}
+
+video {
+  border-radius: 10px;
+  background-color: #000;
+}
+.incoming-call {
+  background-color: #2a2c34;
+  border-left: 4px solid #4fc3f7;
+  border-right: 4px solid #4fc3f7;
+  padding: 16px;
+  margin-top: 16px;
+  border-radius: 15px;
+}

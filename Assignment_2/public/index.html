@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Manager</title>
+</head>
+<body>
+  <h1>Simple File Manager</h1>
+
+  <form method="POST">
+    <label>Filename: <input type="text" name="filename" required></label><br><br>
+
+    <label>Content (for Create):<br>
+      <textarea name="content" rows="5" cols="40"></textarea>
+    </label><br><br>
+
+    <button name="action" value="create">Create File</button>
+    <button name="action" value="read">Read File</button>
+    <button name="action" value="delete">Delete File</button>
+  </form>
+</body>
+</html>
